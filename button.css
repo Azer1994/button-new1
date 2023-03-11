@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+/* soldan saga selis gecid*/
+.btn  {
+  padding: 10px 40px;
+  background-color: rgb(27, 26, 26);
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 25px grey;
+  margin: 10px;
+  
+}
+.left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: aqua;
+  transition: 1s;
+  border-radius: 10px;
+}
+.left:hover::before {
+  width: 100%;
+}
+.left a {
+  text-decoration: none;
+  position: relative;
+  font-size: 24px;
+  color: white;
+}
+
+
+/* sagda sola selis kecid */
+.right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: aqua;
+    transition: 1s;
+    border-radius: 10px;
+  }
+  .right:hover::before {
+    width: 100%;
+  }
+  .right a {
+    text-decoration: none;
+    position: relative;
+    font-size: 24px;
+    color: white;
+  }
+
+
+
+/*yuxardan ashagi selis kecid*/
+
+  .top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: aqua;
+    transition: 1s;
+    border-radius: 10px;
+  }
+  .top:hover::before {
+    height: 100%;
+  }
+  .top a {
+    text-decoration: none;
+    position: relative;
+    font-size: 24px;
+    color: white;
+  }
+
+
+
+  /* ashagdan yuxari selis kecid*/
+  .bottom::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: aqua;
+    transition: 1s;
+    border-radius: 10px;
+  }
+  .bottom:hover::before {
+    height: 100%;
+  }
+  .bottom a {
+    text-decoration: none;
+    position: relative;
+    font-size: 24px;
+    color: white;
+  }
+  
+  /*dioqonal selis kecid*/
+  .dioqonal::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    height: 100%;
+    width: 0;
+    background-color: aqua;
+    transform: skewX(-40deg);
+    transition: 1s;
+  }
+  .dioqonal{
+    overflow: hidden;
+  }
+  .dioqonal:hover::before {
+    width: 130%;
+  }
+  .dioqonal a {
+    text-decoration: none;
+    position: relative;
+    font-size: 24px;
+    color: white;
+  }
+
+
