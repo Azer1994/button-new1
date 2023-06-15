@@ -31,9 +31,11 @@ body {
   background-color: aqua;
   transition: 1s;
   border-radius: 10px;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
 .left:hover::before {
-  width: 100%;
+ width: 100%;
+ box-shadow:0 0 30px aqua;
 }
 .left a {
   text-decoration: none;
@@ -54,6 +56,9 @@ body {
     background-color: aqua;
     transition: 1s;
     border-radius: 10px;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    box-shadow:0 0 30px aqua;
+  
   }
   .right:hover::before {
     width: 100%;
@@ -79,6 +84,8 @@ body {
     background-color: aqua;
     transition: 1s;
     border-radius: 10px;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    box-shadow:0 0 30px aqua;
   }
   .top:hover::before {
     height: 100%;
@@ -103,6 +110,8 @@ body {
     background-color: aqua;
     transition: 1s;
     border-radius: 10px;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    box-shadow:0 0 30px aqua;
   }
   .bottom:hover::before {
     height: 100%;
@@ -125,6 +134,8 @@ body {
     background-color: aqua;
     transform: skewX(-40deg);
     transition: 1s;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    box-shadow:0 0 30px aqua;
   }
   .dioqonal{
     overflow: hidden;
